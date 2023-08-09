@@ -1,0 +1,158 @@
+.service {
+  width: 100%;
+  /* background-color: #000;
+  color: #fff; */
+  height: 100%;
+}
+
+.service-wrap {
+  display: flex;
+  flex-direction: column;
+
+  width: 1360px;
+  height: 100%;
+
+  margin: 0 auto;
+}
+.service-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 20;
+  width: 100%;
+
+  /* padding-top: 65px; */
+
+  flex-flow: column;
+}
+.service-title .title-banner {
+  width: 100%;
+  height: calc(100vh - 100px);
+  /* background-image: url("https://www.meistertask.com/blog/wp-content/uploads/2020/07/shutterstock_1687381003-796x398.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%; */
+}
+.service-title .title-banner .banner-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  height: 100%;
+  /* color: #fff; */
+}
+.service-title .title-banner .banner-text h1 {
+  opacity: 0; /* 시작할 때 투명도 0으로 설정 */
+  animation: fadeIn 1.5s ease-in-out forwards; /* fadeIn 애니메이션을 적용 */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* 시작할 때 아래로 20px 이동 */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* 끝나면 원래 위치로 이동 */
+  }
+}
+
+.service-title .title-banner .arrow,
+.service-title .title-banner .arrow::before {
+  position: absolute;
+  left: 50%;
+}
+.service-title .title-banner .arrow {
+  width: 40px;
+  height: 40px;
+  top: 64%;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #000 solid;
+  border-bottom: 2px #000 solid;
+}
+
+.service-title .title-banner .arrow::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #000 solid;
+  border-bottom: 1px #000 solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-10px, -10px);
+  }
+}
+
+.service h1 {
+  font-size: 65px;
+}
+.service-section-solution {
+  border-bottom: 2px solid black;
+  padding-bottom: 100px;
+}
+.service-section {
+  margin-top: 60px;
+}
+.service-section-title {
+  padding-bottom: 50px;
+}
+.service-section-title h1 {
+  margin: 20px auto;
+}
+.service-section-title-item {
+  font-size: 25px;
+}
+.solution-contents {
+  width: 100%;
+}
+.service-item {
+  width: 100%;
+  max-width: 1920px;
+  min-width: 1280px;
+  margin: 0 auto;
+}
+.solution-item {
+  display: flex;
+  width: 1360px;
+  height: 750px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+.solution-item:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+.solution-item .solution-item-text {
+  width: 400px;
+}
+.solution-item .solution-item-text-detail {
+  font-size: 18px;
+  color: #3c4043;
+}
+.solution-item img {
+  width: 800px;
+}
+.solution-item-text {
+  text-align: center;
+}
+
+.solution-item-text h2 {
+  font-size: 36px;
+}

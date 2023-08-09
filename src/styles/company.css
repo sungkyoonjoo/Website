@@ -1,0 +1,99 @@
+.company {
+  width: 100%;
+  height: 100%;
+}
+.value-item {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  height: 200px;
+
+  border: 1px solid black;
+}
+.value-item div {
+  height: 100%;
+  border-right: 1px solid black;
+  flex-grow: 1;
+}
+
+.section-1 .section-1-list {
+  display: flex;
+  justify-content: space-around;
+
+  height: 300px;
+  gap: 12px;
+}
+
+.section-1 .section-1-list div {
+  display: inline-flex;
+  flex-basis: 33%;
+  width: 150px;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 0.5px solid gray;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px yellow;
+  /* margin: 5px; */
+  /* padding: 10px; */
+}
+/*
+.section-1 .section-1-list div:hover {
+  background-color: yellow;
+  transform: rotate3d(5, 5, 1, 30deg);
+  transition: 1s;
+}
+*/
+
+.section-2-info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  line-height: 28px;
+  text-align: start;
+
+  margin-bottom: 10px;
+}
+.history {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 400px;
+  padding-bottom: 100px;
+  padding: 100px 0;
+}
+.history-contents {
+  display: flex;
+  justify-content: center;
+}
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.history-wrap {
+  display: flex;
+  gap: 32px;
+}
+.history-year {
+  min-width: 105px;
+
+  display: flex;
+  /* align-items: start; */
+}
+
+.history-list-2 {
+  padding-left: 300px;
+}
+
+.history-list-2 div {
+  position: relative;
+  display: flex;
+}
+
+.history-list-2 div span {
+  position: absolute;
+  left: 100px;
+}
